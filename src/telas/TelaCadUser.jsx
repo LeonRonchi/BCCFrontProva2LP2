@@ -3,6 +3,8 @@ import Pagina from "../templates/Pagina";
 import FormCadUser from "./formularios/FormCadUser";
 import TabelaUsers from "./tabelas/tabUsers";
 import { useState } from "react";
+import React from 'react';
+import { useSelector, useDispatch } from 'react-redux';
 
 export default function TelaCadUser(props) {
     const [exibirFormulario, setExibirFormulario] = useState(false);

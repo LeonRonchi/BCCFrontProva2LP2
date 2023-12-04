@@ -1,26 +1,23 @@
-import Tela404 from "./telas/Tela404";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Provider } from "react-redux";
 import TelaCadUser from "./telas/TelaCadUser";
+import { Message } from "./message";
 import TelaMenu from "./telas/TelaMenu";
 import store from "./redux/store";
-import { Provider } from "react-redux";
-import { ToastContainer, toast } from "react-toastify";
-import 'react-toastify/dist/ReactToastify.css';
-
 function App() {
   return (
     <div className="App">
       <Provider store={store}>
         <BrowserRouter>
           <Routes>
-            <Route path="/users" element={<TelaCadUser />} />
+            <Route path="/user" element={<TelaCadUser />} />
+            <Route path="/message" element={<Message />} />
             <Route path="/" element={<TelaMenu />} />
-            <Route path="*" element={<Tela404 />} />
           </Routes>
         </BrowserRouter>
       </Provider>
-      <ToastContainer/>
     </div>
+
   );
 }
 
