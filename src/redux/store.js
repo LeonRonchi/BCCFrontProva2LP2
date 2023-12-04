@@ -3,8 +3,7 @@ import userSlice from './userReducer';
 
 const store = configureStore({
     reducer:{
-        user: userSlice,
-        mensagem: mensagemSlice
+        user: userSlice
     }
 });
 

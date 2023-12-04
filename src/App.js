@@ -1,6 +1,7 @@
-import Tela404 from "./telasCadastro/Tela404";
+import Tela404 from "./telas/Tela404";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import TelaCadUser from "./telas/TelaCadUser";
+import TelaMenu from "./telas/TelaMenu";
 import store from "./redux/store";
 import { Provider } from "react-redux";
 import { ToastContainer, toast } from "react-toastify";

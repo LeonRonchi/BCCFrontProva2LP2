@@ -38,7 +38,6 @@ export default function TabelaUsers(props) {
                 </thead>
                 <tbody>
                     {
-                        //props.listaUsers.map((user) => {
                         listaUsers.map((user) => {
                             return (<tr key={user.cpf}>
                                 <td>{user.id}</td>

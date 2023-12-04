@@ -1,6 +1,6 @@
 import { Container } from "react-bootstrap";
 import Pagina from "../templates/Pagina";
-import FormCadUser from "./formularios/FormCadUsere";
+import FormCadUser from "./formularios/FormCadUser";
 import TabelaUsers from "./tabelas/tabUsers";
 import { useState } from "react";
 
